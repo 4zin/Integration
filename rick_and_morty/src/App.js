@@ -50,7 +50,7 @@ function App() {
       <Nav onSearch={onSearch} randomized={randomHandler} />
       <Routes>
         <Route
-          path="/"
+          path="/home"
           element={<Cards characters={characters} onClose={onClose} />}
         />
         <Route path="/about" element={<About />} />

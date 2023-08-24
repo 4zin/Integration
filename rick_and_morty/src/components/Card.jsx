@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Card = ({ id, name, species, gender, image, onClose }) => {
   return (
     <div>
-      <Link>
-        <button onClick={() => onClose(id)}>X</button>
+      <button onClick={() => onClose(id)}>X</button>
+      <Link to={`/detail/${id}`}>
+        <h2>Name: {name}</h2>
       </Link>
-      <h2>Name: {name}</h2>
       <h2>Species: {species} </h2>
       <h2>Gender: {gender}</h2>
       <img src={image} alt="x" />
