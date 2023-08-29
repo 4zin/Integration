@@ -11,6 +11,9 @@ const Nav = ({ onSearch, randomized }) => {
       <Link to={`/about`}>
         <button>About</button>
       </Link>
+      <Link to={`/favorites`}>
+        <button>Favorites</button>
+      </Link>
       <SearchBar onSearch={onSearch} />
       <div>
         <button onClick={randomized}>Add random</button>

@@ -7,6 +7,7 @@ import About from "./views/About";
 import Nav from "./components/Nav";
 import Detail from "./views/Detail";
 import Login from "./views/Login";
+import Favorites from "./components/Favorites";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -77,6 +78,7 @@ function App() {
         />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </div>
   );
